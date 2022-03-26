@@ -1,0 +1,20 @@
+.codeInsertion {
+    border: 1px solid #d9e5f3;
+    padding: 8px;
+    border-top: 8px solid #d9e5f3;
+    border-bottom: 8px solid #d9e5f3;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+.blueText {
+    color: blue;
+}
+
+.greenText {
+    color: green;
+}
+
+.azureText {
+    background:  #d9e5f3;
+}
