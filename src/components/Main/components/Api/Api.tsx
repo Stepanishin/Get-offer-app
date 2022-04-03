@@ -2,18 +2,13 @@ import { Avatar, List } from 'antd';
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-const JS:FC = () => {
+const Api:FC = () => {
 
     const data = [
         {
-          title: 'JavaScript Closure',
-          link: '/JS/Closure',
-          description: 'Closure is one of important concept in JavaScript. It is widely discussed and still confused concept. Lets understand what the closure is.'
-        },
-        {
-          title: 'Copying Objects in JavaScript',
-          link: '/JS/CopyObjects',
-          description: '3 ways to clone an object'
+          title: 'Event Loop',
+          link: '/Api/EventLoop',
+          description: ''
         },
       ];
 
@@ -36,4 +31,4 @@ const JS:FC = () => {
     );
 };
 
-export default JS;
+export default Api;
