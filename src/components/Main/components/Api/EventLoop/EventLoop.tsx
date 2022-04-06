@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
+import ReturnButton from '../../../../UI/ReturnButton';
 
 const EventLoop:FC = () => {
     return (
         <div>
+            <ReturnButton />
             <h1>Event loop</h1>
             <p>Javascript is a single threaded programming language. It cannot perform two tasks at the same time. All tasks are performed in order of priority. Synchronous functions are executed first, then asynchronous functions and promises. Microtasks run first, then macrotasks</p>
             <div className='codeInsertion'>

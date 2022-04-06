@@ -1,6 +1,7 @@
 import { Avatar, List } from 'antd';
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
+import ReturnButton from '../../../UI/ReturnButton';
 
 const JS:FC = () => {
 
@@ -15,10 +16,16 @@ const JS:FC = () => {
           link: '/JS/CopyObjects',
           description: '3 ways to clone an object'
         },
+        {
+          title: 'Function in JS',
+          link: '/JS/FunctionJS',
+          description: 'About function, about ways to declare a function, Recursion, Callback'
+        },
       ];
 
     return (
         <>
+        <ReturnButton />
             <List
                 itemLayout="horizontal"
                 dataSource={data}

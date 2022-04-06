@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
+import ReturnButton from '../../../../UI/ReturnButton';
 
 const ReactHooks:FC = () => {
     return (
         <div>
+            <ReturnButton />
             <h1>Hooks</h1>
             <p>Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React without classes.</p>
             <a href="https://reactjs.org/docs/hooks-overview.html">Hooks</a>

@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
+import ReturnButton from '../../../../UI/ReturnButton';
 
 const WhatIsReact:FC = () => {
     return (
         <div>
+            <ReturnButton />
             <h1>What Is React?</h1>
             <a href="https://www.simplilearn.com/tutorials/reactjs-tutorial/what-is-reactjs#what_is_react">What is it React</a>
             <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>

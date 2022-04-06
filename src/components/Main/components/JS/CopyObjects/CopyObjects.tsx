@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
+import ReturnButton from '../../../../UI/ReturnButton';
 
 const CopyObjects:FC = () => {
     return (
         <div>
+            <ReturnButton />
             <p>I know 3 ways to copy an object in Javascript</p>
             <h3>1) The for/in Loop</h3>
             <div className='codeInsertion'>

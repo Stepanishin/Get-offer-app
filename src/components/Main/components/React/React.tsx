@@ -1,6 +1,7 @@
 import { Avatar, List } from 'antd';
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
+import ReturnButton from '../../../UI/ReturnButton';
 
 const ReactPage:FC = () => {
 
@@ -19,6 +20,7 @@ const ReactPage:FC = () => {
 
     return (
         <>
+        <ReturnButton />
             <List
                 itemLayout="horizontal"
                 dataSource={data}
