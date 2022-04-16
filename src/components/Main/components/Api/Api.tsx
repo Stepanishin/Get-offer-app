@@ -2,23 +2,15 @@ import { Avatar, List } from 'antd';
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 import ReturnButton from '../../../UI/ReturnButton';
+import {dataApi} from '../../../../store/data'
 
 const Api:FC = () => {
-
-    const data = [
-        {
-          title: 'Event Loop',
-          link: '/Api/EventLoop',
-          description: ''
-        },
-      ];
-
     return (
         <>
         <ReturnButton />
             <List
                 itemLayout="horizontal"
-                dataSource={data}
+                dataSource={dataApi}
                 renderItem={item => (
                 <Link to={item.link} ><List.Item>
                     <List.Item.Meta

@@ -3,6 +3,7 @@ import EventLoop from "../components/Main/components/Api/EventLoop/EventLoop";
 import Closure from "../components/Main/components/JS/Closure/Closure";
 import CopyObjects from "../components/Main/components/JS/CopyObjects/CopyObjects";
 import FunctionJS from "../components/Main/components/JS/FunctionJS/FunctionJS";
+import DataTypes from "../components/Main/components/JS/JavaScriptDataTypes/DataTypes";
 import ReactHooks from "../components/Main/components/React/ReactHooks/ReactHooks";
 import WhatIsReact from "../components/Main/components/React/WhatIsReact/WhatIsReact";
 
@@ -16,6 +17,7 @@ export const JSRoutes: IRoute[] = [
     {path: "/JS/Closure", exact: true, component: Closure},
     {path: "/JS/CopyObjects", exact: true, component: CopyObjects},
     {path: "/JS/FunctionJS", exact: true, component: FunctionJS},
+    {path: "/JS/DataTypes", exact: true, component: DataTypes},
 ]
 
 export const ReactRoutes: IRoute[] = [
