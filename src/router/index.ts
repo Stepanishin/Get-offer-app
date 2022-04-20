@@ -1,5 +1,8 @@
 import React from "react";
 import EventLoop from "../components/Main/components/Api/EventLoop/EventLoop";
+import Protocols from "../components/Main/components/Api/Protocols/Protocols";
+import WhatIsHTML from "../components/Main/components/HTML/WhatIsHTML/WhatIsHTML";
+import ArrToObj from "../components/Main/components/JS/ArrToObj/ArrToObj";
 import Closure from "../components/Main/components/JS/Closure/Closure";
 import CopyObjects from "../components/Main/components/JS/CopyObjects/CopyObjects";
 import FunctionJS from "../components/Main/components/JS/FunctionJS/FunctionJS";
@@ -18,6 +21,7 @@ export const JSRoutes: IRoute[] = [
     {path: "/JS/CopyObjects", exact: true, component: CopyObjects},
     {path: "/JS/FunctionJS", exact: true, component: FunctionJS},
     {path: "/JS/DataTypes", exact: true, component: DataTypes},
+    {path: "/JS/ArrToObj", exact: true, component: ArrToObj},
 ]
 
 export const ReactRoutes: IRoute[] = [
@@ -27,4 +31,9 @@ export const ReactRoutes: IRoute[] = [
 
 export const ApiRoutes: IRoute[] = [
     {path: "/Api/EventLoop", exact: true, component: EventLoop},
+    {path: "/Api/Protocols", exact: true, component: Protocols},
+]
+
+export const HTMLRoutes: IRoute[] = [
+    {path: "/HTML/WhatIsHTML", exact: true, component: WhatIsHTML},
 ]

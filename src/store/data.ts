@@ -19,6 +19,11 @@ export const dataJS = [
       link: '/JS/DataTypes',
       description: 'About data types, Primitive and Structural Data Types'
     },
+    {
+      title: 'How to convert array to object and object to array',
+      link: '/JS/ArrToObj',
+      description: 'all methods for converting an array to an object and vice versa'
+    },
   ];
 
 export const dataReact = [
@@ -39,5 +44,18 @@ export const dataApi = [
       title: 'Event Loop',
       link: '/Api/EventLoop',
       description: ''
+    },
+    {
+      title: 'Protocols, Open Systems Interconnection (OSI) ',
+      link: '/Api/Protocols',
+      description: ''
+    },
+  ];
+
+  export const dataHTML = [
+    {
+      title: 'What Is HTML?',
+      link: '/HTML/WhatIsHTML',
+      description: 'What is HTML. What is the Internet and a web page'
     },
   ];
