@@ -24,6 +24,11 @@ export const dataJS = [
       link: '/JS/ArrToObj',
       description: 'all methods for converting an array to an object and vice versa'
     },
+    {
+      title: 'Operators in JavaScript.',
+      link: '/JS/Operators',
+      description: 'Unary, binary and ternary operators'
+    },
   ];
 
 export const dataReact = [
@@ -50,6 +55,11 @@ export const dataApi = [
       link: '/Api/Protocols',
       description: ''
     },
+    {
+      title: 'Web design patterns — SSR, SSG, and SPA',
+      link: '/Api/WebDesignPatterns',
+      description: ''
+    },
   ];
 
   export const dataHTML = [
@@ -57,5 +67,18 @@ export const dataApi = [
       title: 'What Is HTML?',
       link: '/HTML/WhatIsHTML',
       description: 'What is HTML. What is the Internet and a web page'
+    },
+  ];
+
+  export const dataCSS = [
+    {
+      title: 'A Complete Guide to Flexbox',
+      link: '/CSS/Flex',
+      description: 'Our comprehensive guide to CSS flexbox layout.'
+    },
+    {
+      title: 'CSS Layout - The position Property',
+      link: '/CSS/Position',
+      description: 'The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).'
     },
   ];

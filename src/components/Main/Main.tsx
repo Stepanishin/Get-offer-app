@@ -3,10 +3,11 @@ import React, { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import JS from './components/JS/JS';
-import { ApiRoutes, HTMLRoutes, JSRoutes, ReactRoutes } from '../../router/index'
+import { ApiRoutes, CSSRoutes, HTMLRoutes, JSRoutes, ReactRoutes } from '../../router/index'
 import ReactPage from './components/React/React';
 import Api from './components/Api/Api';
 import HTML from './components/HTML/HTML';
+import CSS from './components/CSS/CSS';
 
 
 
@@ -20,6 +21,7 @@ const Main:FC = () => {
                 <Route path='/React' element={<ReactPage />} />
                 <Route path='/Api' element={<Api />} />
                 <Route path='/HTML' element={<HTML />} />
+                <Route path='/CSS' element={<CSS />} />
                 {JSRoutes.map(route =>
                     <Route path={route.path}
                            key={route.path}
@@ -39,6 +41,12 @@ const Main:FC = () => {
                     />
                 )}
                 {HTMLRoutes.map(route =>
+                    <Route path={route.path}
+                           key={route.path}
+                           element={<route.component />}
+                    />
+                )}
+                {CSSRoutes.map(route =>
                     <Route path={route.path}
                            key={route.path}
                            element={<route.component />}

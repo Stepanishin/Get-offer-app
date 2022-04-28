@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Dropdown, Input, Menu } from 'antd';
-import { dataJS, dataReact, dataApi } from '../../store/data'
+import { dataJS, dataReact, dataApi, dataCSS, dataHTML } from '../../store/data'
 import Fuse from 'fuse.js'
 import { Link } from 'react-router-dom';
 
@@ -8,32 +8,27 @@ const SearchFunction:FC = () => {
 
     const [searchQuery, setSearchQuery] = useState('');
     const { Search } = Input;
-    const [resultSearch, setResultSearch] = useState<any | null>([])
 
-    const onSearch = (e: any) => {
-        const options = {
+    const searchObj = [...dataJS,...dataReact,...dataApi, ...dataCSS, ...dataHTML]
+    const options = {
             includeScore: true,
             keys: ['title', 'description']
-          }
-
-        const searchObj = [...dataJS,...dataReact,...dataApi] 
-          
-        const fuse = new Fuse(searchObj, options)
-          
-        const result = fuse.search(searchQuery)
-        setResultSearch(result)
     }
-    
-    
+    const fuse = new Fuse(searchObj, options)
+    const results = fuse.search(searchQuery);
+
+    function onSearch({ currentTarget } : any) {
+      setSearchQuery(currentTarget.value);
+    }
 
     const searchResult = (
         <Menu>
           {
-            (resultSearch.length === 0)
+            (results.length === 0)
             ?
             <Menu.Item key="nothing">Nothing found</Menu.Item>
             :
-            resultSearch.map((item: any, id: any) => {
+            results.map((item: any, id: any) => {
    
               if (id<5) {
                 id++
@@ -45,16 +40,18 @@ const SearchFunction:FC = () => {
           }
         </Menu>
       );
-
     
-
     return (
         <div>
             <Dropdown 
             trigger={['click']}
             overlay={searchResult} 
             placement="bottomLeft">
-                <Search placeholder="search..." onSearch={onSearch} onChange={e => setSearchQuery(e.target.value)} enterButton style={{ maxWidth: 300 }} value={searchQuery} /> 
+                <Search 
+                placeholder="search..." 
+                onChange={onSearch}
+                enterButton style={{ maxWidth: 300 }} 
+                value={searchQuery} /> 
             </Dropdown>
         </div> 
         

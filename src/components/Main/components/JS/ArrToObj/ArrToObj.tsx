@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { useSelector } from 'react-redux';
+import ReturnButton from '../../../../UI/ReturnButton';
 
 const ArrToObj:FC = () => {
 
@@ -7,6 +8,7 @@ const ArrToObj:FC = () => {
 
     return (
         <div>
+            <ReturnButton />
             {
                 lang.eng 
                 ?
