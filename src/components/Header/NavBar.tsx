@@ -24,7 +24,7 @@ const NavBar:FC<{}> = () => {
                     <Menu.Item key="4"><Link to={"/Api"}>Api</Link></Menu.Item>
                     <Menu.Item key="5"><Link to={"/HTML"}>HTML</Link></Menu.Item>
                     <Menu.Item key="6"><Link to={"/CSS"}>CSS</Link></Menu.Item>
-                    <Menu.Item key="7"><Link to={"/TypeScript"}>TypeScript</Link></Menu.Item>            
+                    <Menu.Item key="7"><Link to={"/TS"}>TypeScript</Link></Menu.Item>            
             </Menu>
         </Header>
     );

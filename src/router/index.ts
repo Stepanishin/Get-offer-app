@@ -13,6 +13,8 @@ import DataTypes from "../components/Main/components/JS/JavaScriptDataTypes/Data
 import Operators from "../components/Main/components/JS/Operators/Operators";
 import ReactHooks from "../components/Main/components/React/ReactHooks/ReactHooks";
 import WhatIsReact from "../components/Main/components/React/WhatIsReact/WhatIsReact";
+import TypeScriptDataTypes from "../components/Main/components/TypeScript/TypeSctiprDataTypes/TypeScriptDataTypes";
+
 
 export interface IRoute {
     path: string;
@@ -47,4 +49,8 @@ export const HTMLRoutes: IRoute[] = [
 export const CSSRoutes: IRoute[] = [
     {path: "/CSS/Flex", exact: true, component: Flex},
     {path: "/CSS/Position", exact: true, component: Position},
+]
+
+export const TSRoutes: IRoute[] = [
+    {path: "/TS/DataTypes", exact: true, component: TypeScriptDataTypes},
 ]

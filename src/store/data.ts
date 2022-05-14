@@ -82,3 +82,11 @@ export const dataApi = [
       description: 'The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).'
     },
   ];
+
+  export const dataTS = [
+    {
+      title: 'TypeScript Data Types',
+      link: '/TS/DataTypes',
+      description: 'About data types is TypeScript.'
+    },
+  ]
